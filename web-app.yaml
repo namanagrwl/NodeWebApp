@@ -1,6 +1,6 @@
 version: '2.15'
 services:
   web-app:
-    image: naman/node-web:v1
+    image: naman/node-web:latest
     ports:
       - 3000:3000
