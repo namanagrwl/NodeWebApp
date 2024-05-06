@@ -6,7 +6,7 @@ import models from './models';
 import routes from './routes';
 
 const app = express();
-
+const PORT = process.env.PORT || 3000;
 // * Application-Level Middleware * //
 
 // Third-Party Middleware
@@ -36,6 +36,6 @@ app.use('/messages', routes.message);
 
 // * Start * //
 
-app.listen(process.env.PORT, () =>
-  console.log(`Example app listening on port ${process.env.PORT}!`),
+app.listen(PORT, () =>
+  console.log(`Example app listening on port ${PORT}!`),
 );
