@@ -19,6 +19,6 @@ jobs:
       run : |
         docker login -u $DOCKER_USER -p $DOCKER_PASS
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag node-web:latest
+      run: docker build . --file Dockerfile --tag namanagrawal/node-web:latest
     - name: Push the Docker image
       run: docker push namanagrawal/node-web:latest
